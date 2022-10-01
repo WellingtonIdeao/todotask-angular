@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'todotask';
+  sideNavStatus: boolean = false;
+
+  constructor() {
+  }
+  setSideNavStatus(status: boolean){
+    this.sideNavStatus = status;
+  }
+
 }
